@@ -1,0 +1,10 @@
+.form-control {
+    background-color: lightgray
+}
+
+.modal-content {
+    width: 750px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
