@@ -24,11 +24,13 @@ module.exports = function (app) {
 
             for (var j = 0; j < friends[i].scores[j]; j++) {
                 totalDifference += Math.abs[parseInt(userScores[j]) - parseInt(friends[i].scores[k])];
-                
+
                 if (totalDifference <= theMatch.scoreDifference) {
                     theMatch.name = friends[i].name;
                     theMatch.photo = friends[i].photo;
                     theMatch.scoreDifference = totalDifference;
+                    console.log('Friend name = ' + friends[i].name);
+                    console.log('Friend image = ' + friends[i].photo);
                 }
             }
         }
