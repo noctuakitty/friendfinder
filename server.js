@@ -9,9 +9,9 @@ app.use(bodyParser.raw());
 app.use(bodyParser.text());
 app.use(express.static("public"));
 
-var html = require("./routing/htmlRoutes");
+var html = require("./app/routing/htmlRoutes");
 html(app);
-var api = require("./routing/apiRoutes");
+var api = require("./app/routing/apiRoutes");
 api(app);
 
 var PORT = 2222;
