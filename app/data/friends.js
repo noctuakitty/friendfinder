@@ -33,7 +33,7 @@ var friendsList = [
     },
     {
         "name": "Brandon",
-        "photo": "/imgs/brandon.jpg",
+        "photo": "/imgs/Brandon.jpg",
         "scores": [
             3,
             1,
@@ -65,7 +65,7 @@ var friendsList = [
     },
     {
         "name": "Chelsea",
-        "photo": "/imgs/chelsea.jpg",
+        "photo": "/imgs/Chelsea.jpg",
         "scores": [
             4,
             3,
@@ -97,7 +97,7 @@ var friendsList = [
     },
     {
         "name": "Kathrina",
-        "photo": "/imgs/kathrina.jpg",
+        "photo": "/imgs/Kathrina.jpg",
         "scores": [
             3,
             1,
