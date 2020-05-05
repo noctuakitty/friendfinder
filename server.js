@@ -14,7 +14,7 @@ html(app);
 var api = require("./app/routing/apiRoutes");
 api(app);
 
-var PORT = 2222;
+var PORT = process.env.PORT || 2222;
 
 app.listen(PORT, function() {
     console.log("APP LISTENING ON PORT: " + PORT);
