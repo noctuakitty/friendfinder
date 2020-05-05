@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Friend Finder</title>
-    <link rel="stylesheet" href="css/reset.css">
+    <link href="css/reset">
     <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/lux/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-oOs/gFavzADqv3i5nCM+9CzXe3e5vXLXZ5LZ7PplpsWpTCufB7kqkTlC9FtZ5nJo" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="css/style">
 </head>
 
 <body>
@@ -188,8 +188,8 @@
                                 </button>
                             </div>
                             <div class="modal-body">
-                                <h5 id="userMatch">name</h5>
-                                <img id="userMatchImage" class="materialboxed" width="650" src="/imgs/shaun.jpg">
+                                <h5 id="userMatch"></h5>
+                                <img id="userMatchImage" class="materialboxed" width="650" src="">
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -235,8 +235,12 @@
                 };
 
                 $.post("/api/friends", userData, function (data) {
-                    $('#matchName').text(data.name);
-                    $("#matchPhoto").attr("src", data.photo);
+                    console.log('response = ' + JSON.stringify(data));
+
+                    console.log(data.name, data.photo);
+
+                    $('#userMatch').text(data.name);
+                    $("#userMatchImage").attr("src", data.photo);
 
                     $('#name').val("");
                     $('#photo').val("");

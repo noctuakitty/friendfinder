@@ -16,23 +16,25 @@ module.exports = function (app) {
 
         var userData = req.body;
         var userScores = userData.scores;
+        console.log("userscore: " + userScores);
 
         var totalDifference = 0;
 
         for (var i = 0; i < friendsList.length; i++) {
             totalDifference = 0;
 
-            for (var j = 0; j < friendsList[i].scores[j]; j++) {
-                totalDifference += Math.abs[parseInt(userScores[j]) - parseInt(friendsList[i].scores[j])];
+            for (var j = 0; j < friendsList[i].scores.length; j++) {
+                totalDifference += Math.abs(parseInt(userScores[j]) - parseInt(friendsList[i].scores[j]));
 
-                if (totalDifference <= theMatch.scoreDifference) {
-                    theMatch.name = friendsList[i].name;
-                    theMatch.photo = friendsList[i].photo;
-                    theMatch.scoreDifference = totalDifference;
-                    console.log('Friend name = ' + friendsList[i].name);
-                    console.log('Friend image = ' + friendsList[i].photo);
-                }
+                console.log("totalDifference: " + totalDifference);
+            } if (totalDifference <= theMatch.scoreDifference) {
+                theMatch.name = friendsList[i].name;
+                theMatch.photo = friendsList[i].photo;
+                theMatch.scoreDifference = totalDifference;
+                console.log('Friend name = ' + friendsList[i].name);
+                console.log('Friend image = ' + friendsList[i].photo);
             }
+            console.log("scoreDifference: " + theMatch.scoreDifference);
         }
 
         friendsList.push(userData);

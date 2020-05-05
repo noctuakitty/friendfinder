@@ -1,7 +1,7 @@
 var friendsList = [
     {
         "name": "Joe",
-        "photo": "imgs/joe.jpg",
+        "photo": "/imgs/joe.jpg",
         "scores": [
             3,
             1,
@@ -17,7 +17,7 @@ var friendsList = [
     },
     {
         "name": "Sandy",
-        "photo": "imgs/sandy.jpeg",
+        "photo": "/imgs/sandy.jpeg",
         "scores": [
             5,
             3,
@@ -33,7 +33,7 @@ var friendsList = [
     },
     {
         "name": "Brandon",
-        "photo": "imgs/brandon.jpg",
+        "photo": "/imgs/brandon.jpg",
         "scores": [
             3,
             1,
@@ -49,7 +49,7 @@ var friendsList = [
     },
     {
         "name": "Alex",
-        "photo": "imgs/alex.jpg",
+        "photo": "/imgs/alex.jpg",
         "scores": [
             2,
             3,
@@ -65,7 +65,7 @@ var friendsList = [
     },
     {
         "name": "Chelsea",
-        "photo": "imgs/chelsea.jpg",
+        "photo": "/imgs/chelsea.jpg",
         "scores": [
             4,
             3,
@@ -81,7 +81,7 @@ var friendsList = [
     },
     {
         "name": "Michael",
-        "photo": "imgs/michael.jpg",
+        "photo": "/imgs/michael.jpg",
         "scores": [
             4,
             2,
@@ -97,7 +97,7 @@ var friendsList = [
     },
     {
         "name": "Kathrina",
-        "photo": "imgs/kathrina.jpg",
+        "photo": "/imgs/kathrina.jpg",
         "scores": [
             3,
             1,
@@ -113,7 +113,7 @@ var friendsList = [
     },
     {
         "name": "Richard",
-        "photo": "imgs/richard.jpg",
+        "photo": "/imgs/richard.jpg",
         "scores": [
             1,
             1,
@@ -129,7 +129,7 @@ var friendsList = [
     },
     {
         "name": "Tina",
-        "photo": "imgs/tina.jpg",
+        "photo": "/imgs/tina.jpg",
         "scores": [
             5,
             5,
@@ -145,7 +145,7 @@ var friendsList = [
     },
     {
         "name": "Steven",
-        "photo": "imgs/steven.jpg",
+        "photo": "/imgs/steven.jpg",
         "scores": [
             3,
             3,
